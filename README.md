@@ -56,38 +56,6 @@ The project contains the following tables:
 10. `Playlist`
 11. `PlaylistTrack`
 
-
-### Table Relationships
-
-```text
-Artist
-   │
-   └── Album
-          │
-          └── Track
-                 │
-                 ├── Genre
-                 └── MediaType
-
-Customer
-   │
-   └── Invoice
-          │
-          └── InvoiceLine
-                 │
-                 └── Track
-
-Playlist
-   │
-   └── PlaylistTrack
-          │
-          └── Track
-
-Employee
-   │
-   └── Customer
-
-
 # 🔍 Key Analysis Questions & Insights
 
 ### 1. Who is the senior-most employee based on job title?
@@ -147,3 +115,37 @@ Employee
 ### 10. What is the most popular music genre in each country?
 
 **Answer:** Rock is the most purchased genre in the majority of countries. This can help support region-specific marketing strategies.
+
+
+### Table Relationships
+
+```text
+Artist
+   │
+   └── Album
+          │
+          └── Track
+                 │
+                 ├── Genre
+                 └── MediaType
+
+Customer
+   │
+   └── Invoice
+          │
+          └── InvoiceLine
+                 │
+                 └── Track
+
+Playlist
+   │
+   └── PlaylistTrack
+          │
+          └── Track
+
+Employee
+   │
+   └── Customer
+
+
+
